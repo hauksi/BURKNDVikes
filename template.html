@@ -1,0 +1,260 @@
+<!--
+  BUR VÍKINGUR — WordPress eining (útgáfa 2 — kyrrstætt HTML)
+  ============================================================
+  Þessi skrá er hönnuð til að líma beint inn í eina "Custom HTML" blokk í WordPress
+  (Gutenberg: ýttu á "+" og leitaðu að "Custom HTML" — EKKI venjulega málsgrein/Texti
+  blokk, því hún fjarlægir oft forskriftarmerki af öryggisástæðum).
+
+  ALLT INNIHALD ER NÚ ÞEGAR TILBÚIÐ HÉR AÐ NEÐAN — síðan birtist rétt jafnvel þótt
+  WordPress eða öryggisviðbót fjarlægi JavaScript-ið. Skriftan hér fyrir neðan bætir
+  aðeins við fellilista-hegðun (opna/loka flokk) og mjúku skrolli — ef hún keyrir ekki
+  birtast einfaldlega allir flokkar opnir í einu, ekkert efni týnist.
+
+  TIL AÐ UPPFÆRA TEXTA/GÖGN SÍÐAR:
+  1. Breyttu bur-innihald.json (nöfn, æfingatöflur, mót, tengiliðir).
+  2. Keyrðu "python3 build.py" (fylgir með) — það býr til nýja útgáfu af þessari skrá.
+  3. Límdu nýja innihaldið aftur inn í Custom HTML blokkina í WordPress.
+-->
+<div class="bur-wp" id="bur-wp-root">
+__CONTENT__
+</div>
+
+<style>
+  .bur-wp{
+    --bur-ink:#18140f;
+    --bur-ink-soft:rgba(24,20,15,.66);
+    --bur-ink-faint:rgba(24,20,15,.42);
+    --bur-paper:#ffffff;
+    --bur-sunken:#f6f2ea;
+    --bur-line:rgba(24,20,15,.13);
+    --bur-red:#c1442e;
+    --bur-red-tint:#f5ded8;
+    --bur-gold:#a97c2b;
+    --bur-gold-tint:#f1e6c8;
+    --bur-font-head:'Oswald','Arial Narrow',sans-serif;
+    --bur-font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-family:var(--bur-font-body);
+    color:var(--bur-ink);
+    background:var(--bur-paper);
+    line-height:1.5;
+    max-width:1000px;
+    margin:0 auto;
+    box-sizing:border-box;
+  }
+  .bur-wp *{box-sizing:border-box;}
+  .bur-wp img{max-width:100%;}
+
+  /* Sumar WordPress-þemur (t.d. Avada/Fusion) setja "scroll reveal" hreyfimynd
+     (opacity+transform, sjá t.d. flokkinn "animation-interval") utan um efnis-
+     dálka. Á mjög háum einingum eins og þessari getur sú hreyfimynd fests á
+     nær-0 gegnsæi og efnið verður ósýnilegt. Þessi regla aftengir slíkar
+     hreyfimyndir sérstaklega fyrir foreldra sem innihalda .bur-wp. */
+  :where(.animation-interval,[class*="animation-interval"],[class*="scroll-reveal"],[class*="fusion-animated"]):has(.bur-wp){
+    opacity:1 !important;
+    visibility:visible !important;
+    transform:none !important;
+    transition:none !important;
+  }
+
+  .bur-wp h1,.bur-wp h2,.bur-wp h3{
+    font-family:var(--bur-font-head);
+    text-transform:uppercase;
+    letter-spacing:.01em;
+    margin:0;
+  }
+
+  /* ---- hero ---- */
+  .bur-hero{padding:28px 4px 24px;border-bottom:1px solid var(--bur-line);margin-bottom:28px;}
+  .bur-eyebrow{
+    font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--bur-red);
+    font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:10px;
+  }
+  .bur-eyebrow::before{content:"";width:18px;height:2px;background:var(--bur-red);}
+  .bur-hero h1{font-size:clamp(28px,5vw,42px);line-height:1;}
+  .bur-hero p{font-size:15px;color:var(--bur-ink-soft);max-width:60ch;margin:12px 0 0;}
+
+  /* ---- quick nav (plain anchor links — work with or without JS) ---- */
+  .bur-nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;}
+  .bur-nav a{
+    font-family:var(--bur-font-body);font-weight:600;font-size:13px;
+    border:1px solid var(--bur-line);background:var(--bur-paper);color:var(--bur-ink-soft);
+    padding:7px 14px;border-radius:100px;cursor:pointer;text-decoration:none;display:inline-block;
+  }
+  .bur-nav a:hover{border-color:var(--bur-red);color:var(--bur-red);}
+
+  /* ---- section shell ---- */
+  .bur-section{margin:0 0 40px;scroll-margin-top:16px;}
+  .bur-section-head{margin-bottom:16px;}
+  .bur-section-head h2{font-size:20px;}
+
+  /* ---- docs grid ---- */
+  .bur-docs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+  @media (max-width:560px){.bur-docs{grid-template-columns:1fr;}}
+  .bur-doc{
+    display:flex;align-items:center;gap:12px;padding:13px 15px;
+    border:1px solid var(--bur-line);border-radius:10px;text-decoration:none;color:var(--bur-ink);
+    background:var(--bur-paper);transition:border-color .15s,background .15s;
+  }
+  .bur-doc:hover{border-color:var(--bur-red);background:var(--bur-sunken);}
+  .bur-doc-ico{
+    flex:none;width:34px;height:34px;border-radius:8px;background:var(--bur-red-tint);color:var(--bur-red);
+    display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;font-family:var(--bur-font-head);
+  }
+  .bur-doc span{font-size:13.5px;font-weight:600;line-height:1.3;}
+
+  /* ---- board / contact cards ---- */
+  .bur-board{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+  @media (max-width:560px){.bur-board{grid-template-columns:1fr;}}
+  .bur-person{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:12px 14px;border:1px solid var(--bur-line);border-radius:10px;background:var(--bur-paper);
+  }
+  .bur-person-name{font-size:13.5px;font-weight:600;}
+  .bur-person-role{display:block;font-size:11.5px;color:var(--bur-ink-faint);font-weight:500;margin-top:1px;}
+  .bur-person-actions{display:flex;gap:6px;flex:none;}
+  .bur-icobtn{
+    width:30px;height:30px;border-radius:8px;border:1px solid var(--bur-line);
+    display:flex;align-items:center;justify-content:center;color:var(--bur-ink-soft);text-decoration:none;font-size:14px;
+    background:var(--bur-sunken);
+  }
+  .bur-icobtn:hover{border-color:var(--bur-red);color:var(--bur-red);}
+
+  /* ---- flokkar accordion ----
+     Sjálfgefið (án JS): allir flokkar birtast fullopnir — ekkert efni falið.
+     Þegar JS keyrir bætist "bur-js" klasi við #bur-wp-root og þá fæst rétt
+     fellilistahegðun (aðeins einn flokkur opinn í einu). ---- */
+  .bur-accordion{border:1px solid var(--bur-line);border-radius:12px;overflow:hidden;scroll-margin-top:16px;}
+  .bur-acc-item{border-bottom:1px solid var(--bur-line);scroll-margin-top:16px;}
+  .bur-acc-item:last-child{border-bottom:none;}
+  .bur-acc-head{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:16px 18px;user-select:none;background:var(--bur-paper);
+  }
+  .bur-acc-head h3{font-size:16px;letter-spacing:.02em;}
+  .bur-acc-plus{display:none;font-family:var(--bur-font-head);font-size:20px;color:var(--bur-ink-faint);flex:none;transition:transform .15s;}
+
+  .bur-wp.bur-js .bur-acc-head{cursor:pointer;}
+  .bur-wp.bur-js .bur-acc-head:hover{background:var(--bur-sunken);}
+  .bur-wp.bur-js .bur-acc-plus{display:inline-block;}
+  .bur-wp.bur-js .bur-acc-item.open .bur-acc-plus{transform:rotate(45deg);color:var(--bur-red);}
+  .bur-wp.bur-js .bur-acc-body{max-height:0;overflow:hidden;transition:max-height .25s ease;background:var(--bur-sunken);}
+  .bur-wp.bur-js .bur-acc-item.open .bur-acc-body{max-height:2600px;}
+  .bur-acc-body{background:var(--bur-sunken);}
+  .bur-acc-in{padding:20px 18px 24px;}
+
+  .bur-cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  @media (max-width:640px){.bur-cols{grid-template-columns:1fr;}}
+  .bur-col-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--bur-ink-faint);margin-bottom:10px;}
+  .bur-namelist{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:6px;}
+  .bur-namelist li{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    font-size:13px;padding:7px 10px;background:var(--bur-paper);border-radius:8px;border:1px solid var(--bur-line);
+  }
+  .bur-namelist a{color:var(--bur-red);text-decoration:none;font-size:12px;font-weight:600;}
+  .bur-namelist a:hover{text-decoration:underline;}
+  .bur-namelist .bur-no-email{color:var(--bur-ink-faint);font-size:11.5px;}
+
+  table.bur-sched{width:100%;border-collapse:collapse;font-size:12.5px;background:var(--bur-paper);border-radius:8px;overflow:hidden;border:1px solid var(--bur-line);}
+  table.bur-sched th{
+    text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--bur-ink-faint);
+    padding:8px 10px;border-bottom:1px solid var(--bur-line);font-weight:700;
+  }
+  table.bur-sched td{padding:7px 10px;border-bottom:1px solid var(--bur-line);}
+  table.bur-sched tr:last-child td{border-bottom:none;}
+  table.bur-sched td.bur-time{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap;}
+
+  .bur-mot{
+    margin-top:16px;font-size:13px;color:var(--bur-ink-soft);padding:12px 14px;
+    background:var(--bur-gold-tint);border-radius:8px;
+  }
+  .bur-mot b{color:var(--bur-ink);}
+
+  .bur-foot{margin-top:8px;padding-top:18px;border-top:1px solid var(--bur-line);font-size:11.5px;color:var(--bur-ink-faint);}
+</style>
+
+<script>
+(function(){
+  "use strict";
+  /* Framsækin viðbót (progressive enhancement) — keyrir aðeins ef WordPress leyfir
+     þessa forskrift í Custom HTML blokkinni. Ef þetta keyrir ALDREI: síðan er samt
+     fullkomlega læsileg, bara með alla flokka opna í einu í stað fellilista. */
+  var root = document.getElementById("bur-wp-root");
+  if(!root) return;
+  root.classList.add("bur-js");
+
+  /* Vörn gegn "scroll reveal" hreyfimyndum þemunnar (t.d. Avada/Fusion) sem
+     geta fest foreldra-einingu þessa kubbs á nær-0 gegnsæi þegar hann er svona
+     hár. Sumar slíkar hreyfimyndir endurreikna gegnsæi eftir skrun-stöðu og
+     skrifa því ítrekað yfir style-eigindið — CSS :has() reglan hér að ofan
+     dugar í flestum tilvikum, en til að vinna líka gegn viðvarandi JS-yfirskrift
+     er hér MutationObserver sem lagfærir style-eigindið aftur um leið og þemað
+     breytir því, endalaust (ekki bara í nokkrar sekúndur). */
+  (function guardAgainstThemeAnimation(){
+    var targets = [];
+    var el = root.parentElement, hops = 0;
+    while(el && hops < 8){
+      if(/animation-interval|scroll-reveal|fusion-animated/i.test(el.className || "")){
+        targets.push(el);
+      }
+      el = el.parentElement; hops++;
+    }
+    if(!targets.length) return;
+
+    function lock(t){
+      t.style.setProperty("opacity", "1", "important");
+      t.style.setProperty("visibility", "visible", "important");
+      t.style.setProperty("transform", "none", "important");
+      t.classList.remove("animation-interval");
+    }
+    targets.forEach(function(t){
+      lock(t);
+      var mo = new MutationObserver(function(){
+        // Ef eitthvað breytir style/klasa aftur, þvingum sömu gildi strax á ný.
+        if(t.style.opacity !== "1" || t.style.visibility !== "visible" || t.style.transform !== "none"){
+          lock(t);
+        }
+      });
+      mo.observe(t, {attributes:true, attributeFilter:["style","class"]});
+    });
+  })();
+
+  var items = root.querySelectorAll(".bur-acc-item");
+  items.forEach(function(item, i){
+    if(i !== 0) item.classList.remove("open");
+    var head = item.querySelector(".bur-acc-head");
+    head.setAttribute("aria-expanded", i === 0 ? "true" : "false");
+    function toggle(){
+      var open = item.classList.toggle("open");
+      head.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    head.addEventListener("click", toggle);
+    head.addEventListener("keydown", function(e){
+      if(e.key === "Enter" || e.key === " "){ e.preventDefault(); toggle(); }
+    });
+  });
+
+  root.querySelectorAll('.bur-nav a[data-flokkur]').forEach(function(a){
+    a.addEventListener("click", function(e){
+      var id = "acc-" + a.getAttribute("data-flokkur");
+      var item = document.getElementById(id);
+      if(item){
+        e.preventDefault();
+        item.classList.add("open");
+        item.querySelector(".bur-acc-head").setAttribute("aria-expanded","true");
+        item.scrollIntoView({behavior:"smooth", block:"start"});
+      }
+    });
+  });
+
+  root.querySelectorAll('.bur-nav a:not([data-flokkur])').forEach(function(a){
+    a.addEventListener("click", function(e){
+      var id = a.getAttribute("href").slice(1);
+      var el = document.getElementById(id);
+      if(el){
+        e.preventDefault();
+        el.scrollIntoView({behavior:"smooth", block:"start"});
+      }
+    });
+  });
+})();
+</script>
