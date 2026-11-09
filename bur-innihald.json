@@ -120,7 +120,7 @@
         ],
         "kvk": [
           { "dagur": "Mánudagar", "timi": "16:30–17:30", "stadur": "Virkið – Gervigras" },
-          { "dagur": "Þriðjudagar", "timi": "17:00–28:00", "stadur": "Víkin – Gervigras" },
+          { "dagur": "Þriðjudagar", "timi": "17:00–18:00", "stadur": "Víkin – Gervigras" },
           { "dagur": "Fimmtudagar", "timi": "16:30–17:45", "stadur": "Virkið – Gervigras" },
           { "dagur": "Föstudagar", "timi": "16:00–17:00", "stadur": "Víkin – Gervigras" }
         ]
@@ -182,7 +182,7 @@
           { "nafn": "Brynja Sverrisóttir", "netfang": "brynjamarin@gmail.com" },
           { "nafn": "Ragna Sveinsdóttir", "netfang": "ragnasveins86@gmail.com" },
           { "nafn": "Emma Hafberg", "netfang": "edhafberg@gmail.com" },
-          { "nafn": "Daníel Freyr Jóhannsson", "netfang": "daniel.freyr.olafsson@gmail" },
+          { "nafn": "Daníel Freyr Jóhannsson", "netfang": "daniel.freyr.olafsson@gmail.com" },
           { "nafn": "Arnrún Sveinsdóttir", "netfang": "arnrunsveins@gmail.com" },
           { "nafn": "Eva Sigrún", "netfang": "evasigrun86@hotmail.com" }
         ]
