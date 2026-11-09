@@ -55,13 +55,13 @@
       "heiti": "3. flokkur",
       "foreldrarad": {
         "kk": [
-          { "nafn": "Daníel Sigurbjörnsson", "netfang": "dannis@dannis.dk" },
-          { "nafn": "Berglind Hasler", "netfang": "berglind@havari.is" },
-          { "nafn": "Halldóra Vattnes", "netfang": "krummi3112@gmail.com" },
-          { "nafn": "Hildur Rós Guðnadóttir", "netfang": "hildurros82@gmail.com" },
-          { "nafn": "Jóhannes Árnason", "netfang": "joiingi@gmail.com" },
-          { "nafn": "Þórdís Sigfúsdóttir", "netfang": "thordis22@internet.is" },
-          { "nafn": "Ingólfur Ólafsson", "netfang": "ingolfuro@hotmail.com" }
+          { "nafn": "Arnar", "netfang": "addisig@me.com" },
+          { "nafn": "Kristján Helgi Hjartarson", "netfang": "khrisx156@gmail.com" },
+          { "nafn": "Finnbogi Karl", "netfang": "finnbogikarl1@gmail.com" },
+          { "nafn": "Ægir Már Burknason", "netfang": "aegir@myndabox.is" },
+          { "nafn": "Jón Viðar Ágústsson", "netfang": "nonnib77@gmail.com" },
+          { "nafn": "Hrafn Garðarsson", "netfang": "hrafng74@gmail.com" },
+          { "nafn": "Eiríkur Ragnarsson", "netfang": "eikiben@hotmail.com" }
         ],
         "kvk": [
           { "nafn": "Jóhanna Gunnar", "netfang": "johanngth1@gmail.com" },
@@ -76,17 +76,16 @@
       "æfingatafla": {
         "kk": [
           { "dagur": "Mánudagar (allir)", "timi": "18:15–19:30", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Þriðjudagar (allir)", "timi": "17:30–19:15", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Fimmtudagar (2010)", "timi": "19:00–20:00", "stadur": "Safamýri – Gervigras" },
+          { "dagur": "Miðvikudagar (allir)", "timi": "19:30–21:00", "stadur": "Víkin – Gervigras" },
+          { "dagur": "Fimmtudagar (2012)", "timi": "18:00–19:00", "stadur": "Virkið – Gervigras" },
           { "dagur": "Fimmtudagar (2011)", "timi": "19:00–20:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Föstudagar (2010)", "timi": "19:00–20:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Föstudagar (2011)", "timi": "19:00–20:00", "stadur": "Safamýri – Gervigras" }
+          { "dagur": "Föstudagar (allir)", "timi": "14:30–15:30", "stadur": "Virkið – Gervigras" }
         ],
         "kvk": [
-          { "dagur": "Mánudagar", "timi": "18:30–19:30", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Þriðjudagar", "timi": "17:00–18:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Miðvikudagar", "timi": "19:15–20:30", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Fimmtudagar", "timi": "18:00–19:00", "stadur": "Víkin – Gervigras" }
+          { "dagur": "Mánudagar", "timi": "18:30–20:00", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Þriðjudagar", "timi": "18:00–19:15", "stadur": "Víkin – Gervigras" },
+          { "dagur": "Miðvikudagar", "timi": "17:30–18:30", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Föstudagar", "timi": "18:00–19:00", "stadur": "Víkin – Gervigras" }
         ]
       },
       "helstu_mot": "Reykjavíkurmót, Íslandsmót og Stockholm Cup."
@@ -97,35 +96,32 @@
       "foreldrarad": {
         "kk": [
           { "nafn": "Jónas R. Gunnarsson", "netfang": null },
-          { "nafn": "Birkir Hrafn Jóakimsson", "netfang": null },
-          { "nafn": "Guðrún Elísabet Ómarsdóttir", "netfang": null },
-          { "nafn": "Ísleifur Örn Garðarsson", "netfang": null },
-          { "nafn": "Magnús Þór Guðmundsson", "netfang": null },
-          { "nafn": "Ragnheiður Gunnarsdóttir", "netfang": null }
+          { "nafn": "Birkir Hrafn Jóakimsson", "netfang": "birkir@malbik.is" },
+          { "nafn": "Bjarni Ólafur", "netfang": null },
+          { "nafn": "Ingunn Mary", "netfang": "ingunnmary@gmail.com" }
         ],
         "kvk": [
-          { "nafn": "Linda Rut", "netfang": "lindarut0510@gmail.com" },
-          { "nafn": "Kári", "netfang": "kari@obbosi.is" },
-          { "nafn": "Hafþór Einarsson", "netfang": "hafthor.einarsson@gmail.com" },
-          { "nafn": "Harpa Sigurðardóttir", "netfang": "sigurdardottirharpa@gmail.com" },
-          { "nafn": "Hrund", "netfang": "hrund31@hotmail.com" },
           { "nafn": "Einar Helgi", "netfang": "einararmann@gmail.com" },
-          { "nafn": "Rut Elfarsdóttir", "netfang": "rthelfarsdottir@gmail.com" }
+          { "nafn": "Kári", "netfang": "kari@obbosi.is" },
+          { "nafn": "Arnar Björns", "netfang": "arnarbjorn@gmail.com" },
+          { "nafn": "Helga Gunnólfs", "netfang": "" },
+          { "nafn": "Ruth Elfarsdóttir", "netfang": "ruth.elfarsdottir@sensa.is" },
+          { "nafn": "Sigrún Brynjólfsdóttir", "netfang": "sigrunbrynjolfsdottir@gmail.com" }
         ]
       },
       "æfingatafla": {
         "kk": [
           { "dagur": "Mánudagar (allir)", "timi": "17:00–18:15", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Miðvikudagar (2013)", "timi": "17:30–18:30", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Miðvikudagar (2012)", "timi": "18:00–19:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Fimmtudagar (allir)", "timi": "17:45–19:00", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Föstudagar (2013)", "timi": "17:30–18:30", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Föstudagar (2012)", "timi": "18:00–19:00", "stadur": "Víkin – Gervigras" }
+          { "dagur": "Þriðjudagar (allir)", "timi": "16:30–17:30", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Miðvikudagar (2014)", "timi": "18:00–19:00", "stadur": "Víkin – Gervigras" },
+          { "dagur": "Miðvikudagar (2013)", "timi": "18:30–19:30", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Föstudagar (2014)", "timi": "17:30–18:30", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Föstudagar (2013)", "timi": "17:00–18:00", "stadur": "Víkin – Gervigras" }
         ],
         "kvk": [
-          { "dagur": "Mánudagar", "timi": "17:30–18:30", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Þriðjudagar", "timi": "19:00–20:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Fimmtudagar", "timi": "16:30–17:45", "stadur": "Safamýri – Gervigras" },
+          { "dagur": "Mánudagar", "timi": "16:30–17:30", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Þriðjudagar", "timi": "17:00–28:00", "stadur": "Víkin – Gervigras" },
+          { "dagur": "Fimmtudagar", "timi": "16:30–17:45", "stadur": "Virkið – Gervigras" },
           { "dagur": "Föstudagar", "timi": "16:00–17:00", "stadur": "Víkin – Gervigras" }
         ]
       },
@@ -139,9 +135,9 @@
           { "nafn": "Helgi Már Erlingsson", "netfang": "helgi@helgi.com" },
           { "nafn": "Tara Rut Hilmarsdóttir", "netfang": "tararut0509@gmail.com" },
           { "nafn": "Tinna Óðinsdóttir", "netfang": "tinnaod@gmail.com" },
-          { "nafn": "Valgerður Arnardóttir", "netfang": "valgerdur.arnardottir@gmail.com" },
-          { "nafn": "Ester Böðvarsdóttir", "netfang": "kjartansdottir.ester@gmail.com" },
-          { "nafn": "Katla Guðjóns", "netfang": "katla@isbudvesturbaear.is" }
+          { "nafn": "Sigurlaug Bjarnadóttir", "netfang": "sigurlaugd@gmail.com" },
+          { "nafn": "Jón Þórarinsson", "netfang": "jon@fishland.is" },
+          { "nafn": "Hafliði Sævarsson", "netfang": "haflidisaevarsson@gmail.com" }
         ],
         "kvk": [
           { "nafn": "Dóra Björk Steinarsdóttir", "netfang": "dorabjork87@gmail.com" },
@@ -154,16 +150,16 @@
       },
       "æfingatafla": {
         "kk": [
-          { "dagur": "Þriðjudagar", "timi": "16:30–17:30", "stadur": "Safamýri – Gervigras" },
+          { "dagur": "Þriðjudagar", "timi": "17:30–18:30", "stadur": "Virkið – Gervigras" },
           { "dagur": "Miðvikudagar", "timi": "17:00–18:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Fimmtudagar", "timi": "17:00–18:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Föstudagar", "timi": "16:30–17:30", "stadur": "Safamýri – Gervigras" }
+          { "dagur": "Fimmtudagar", "timi": "18:00–19:00", "stadur": "Víkin – Gervigras" },
+          { "dagur": "Föstudagar", "timi": "16:30–17:30", "stadur": "Virkið – Gervigras" }
         ],
         "kvk": [
-          { "dagur": "Mánudagar", "timi": "16:30–17:30", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Þriðjudagar", "timi": "18:00–19:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Miðvikudagar", "timi": "16:30–17:30", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Föstudagar", "timi": "17:00–18:00", "stadur": "Víkin – Gervigras" }
+          { "dagur": "Mánudagar", "timi": "17:30–18:30", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Miðvikudagar", "timi": "16:30–17:30", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Fimmtudagar", "timi": "17:00–18:00", "stadur": "Víkin – Gervigras" },
+          { "dagur": "Föstudagar", "timi": "15:00–16:00", "stadur": "Víkin – Gervigras" }
         ]
       },
       "helstu_mot": "TM mótið (KVK), N1 mótið (KK) og Símamótið (KVK)."
@@ -173,36 +169,36 @@
       "heiti": "6. flokkur",
       "foreldrarad": {
         "kk": [
-          { "nafn": "Hulda Sigmarsdóttir", "netfang": null },
+          { "nafn": "Haraldur Karlsson", "netfang": "haraldurkarls@gmail.com" },
           { "nafn": "Rúnar Sigurður Sigurjónsson", "netfang": null },
           { "nafn": "Marteinn Briem", "netfang": null },
-          { "nafn": "Bylgja Rós Rúnarsdóttir", "netfang": "bylgjaros@gmail.com" },
-          { "nafn": "Íris Hrund Sigurðardóttir", "netfang": "8607106@gmail.com" },
-          { "nafn": "Sigurlaug Dröfn Bjarnadóttir", "netfang": null },
-          { "nafn": "Marín Björg Guðjónsdóttir", "netfang": null },
-          { "nafn": "Haraldur Karlsson", "netfang": null }
+          { "nafn": "Snædís", "netfang": "snaedish@gmail.com" },
+          { "nafn": "Guðrún Thorarenssen", "netfang": "gudrunath@gmail.com" },
+          { "nafn": "Jón Óðinn Reynisson ", "netfang": "jonodinn@gmail.com" },
+          { "nafn": "Guðjón Hrafn Guðmundsson", "netfang": "gudjonhrafn@gmail.com" },
+          { "nafn": "Ása Dís Kristjánsdóttir", "netfang": "disakristjans@gmail.com" }
         ],
         "kvk": [
-          { "nafn": "Brynja", "netfang": "brynjamarin@gmail.com" },
-          { "nafn": "Einar", "netfang": "einararmann@gmail.com" },
-          { "nafn": "Emma", "netfang": "edhafberg@gmail.com" },
-          { "nafn": "Danni", "netfang": "daniel.freyr.olafsson@gmail" },
-          { "nafn": "Jón", "netfang": "jon.kristjansson@gmail.com" },
-          { "nafn": "Kári", "netfang": "kari@obbosi.is" }
+          { "nafn": "Brynja Sverrisóttir", "netfang": "brynjamarin@gmail.com" },
+          { "nafn": "Ragna Sveinsdóttir", "netfang": "ragnasveins86@gmail.com" },
+          { "nafn": "Emma Hafberg", "netfang": "edhafberg@gmail.com" },
+          { "nafn": "Daníel Freyr Jóhannsson", "netfang": "daniel.freyr.olafsson@gmail" },
+          { "nafn": "Arnrún Sveinsdóttir", "netfang": "arnrunsveins@gmail.com" },
+          { "nafn": "Eva Sigrún", "netfang": "evasigrun86@hotmail.com" }
         ]
       },
       "æfingatafla": {
         "kk": [
-          { "dagur": "Mánudagar", "timi": "15:00–16:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Þriðjudagar", "timi": "14:30–15:30", "stadur": "Safamýri – Gervigras" },
+          { "dagur": "Mánudagar", "timi": "16:00–17:00", "stadur": "Víkin – Gervigras" },
+          { "dagur": "Þriðjudagar", "timi": "14:30–15:30", "stadur": "Virkið – Gervigras" },
           { "dagur": "Miðvikudagar", "timi": "15:00–16:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Fimmtudagar", "timi": "14:30–15:30", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Laugardagar", "timi": "10:00–11:00", "stadur": "Safamýri – Gervigras" }
+          { "dagur": "Fimmtudagar", "timi": "14:30–15:30", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Laugardagar", "timi": "10:00–11:00", "stadur": "Virkið – Gervigras" }
         ],
         "kvk": [
-          { "dagur": "Mánudagar", "timi": "14:30–15:30", "stadur": "Safamýri – Gervigras" },
+          { "dagur": "Mánudagar", "timi": "14:30–15:30", "stadur": "Virkið – Gervigras" },
           { "dagur": "Þriðjudagar", "timi": "15:00–16:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Miðvikudagar", "timi": "14:30–15:30", "stadur": "Safamýri – Gervigras" },
+          { "dagur": "Miðvikudagar", "timi": "14:30–15:30", "stadur": "Virkið – Gervigras" },
           { "dagur": "Fimmtudagar", "timi": "15:00–16:00", "stadur": "Víkin – Gervigras" },
           { "dagur": "Laugardagar", "timi": "10:00–11:00", "stadur": "Víkin – Gervigras" }
         ]
@@ -221,26 +217,23 @@
           { "nafn": "Einar Njálsson", "netfang": "einarnjalsson@gmail.com" }
         ],
         "kvk": [
-          { "nafn": "Elsa Ísberg", "netfang": "isberg79@gmail.com" },
-          { "nafn": "Eva Sigrún", "netfang": "evasigrun81@hotmail.com" },
-          { "nafn": "Arnrún Sveinsdóttir", "netfang": "arnrunsveins@gmail.com" },
-          { "nafn": "Helena Vignisdóttir", "netfang": "helenavignis@gmail.com" },
-          { "nafn": "Gísli Kristjánsson", "netfang": "gislik@hotmail.com" },
-          { "nafn": "Þórarinn Árnason", "netfang": "doddi1313@gmail.com" }
+          { "nafn": "Reynir", "netfang": "reynir@bl.is" },
+          { "nafn": "Þórarinn", "netfang": "doddi1313@gmail.com" },
+          { "nafn": "Jón Steinar", "netfang": "jonst29@gmail.com" }
         ]
       },
       "æfingatafla": {
         "kk": [
-          { "dagur": "Mánudagar", "timi": "16:00–17:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Þriðjudagar", "timi": "15:30–16:30", "stadur": "Safamýri – Gervigras" },
+          { "dagur": "Mánudagar", "timi": "15:00–16:00", "stadur": "Víkin – Gervigras" },
+          { "dagur": "Þriðjudagar", "timi": "15:30–16:30", "stadur": "Virkið – Gervigras" },
           { "dagur": "Miðvikudagar", "timi": "16:00–17:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Fimmtudagar", "timi": "15:30–16:30", "stadur": "Safamýri – Gervigras" },
-          { "dagur": "Laugardagar", "timi": "9:00–10:00", "stadur": "Safamýri – Gervigras" }
+          { "dagur": "Fimmtudagar", "timi": "15:30–16:30", "stadur": "Virkið – Gervigras" },
+          { "dagur": "Laugardagar", "timi": "11:00–12:00", "stadur": "Virkið – Gervigras" }
         ],
         "kvk": [
-          { "dagur": "Mánudagar", "timi": "15:30–16:30", "stadur": "Safamýri – Gervigras" },
+          { "dagur": "Mánudagar", "timi": "15:30–16:30", "stadur": "Virkið – Gervigras" },
           { "dagur": "Þriðjudagar", "timi": "16:00–17:00", "stadur": "Víkin – Gervigras" },
-          { "dagur": "Miðvikudagar", "timi": "15:30–16:30", "stadur": "Safamýri – Gervigras" },
+          { "dagur": "Miðvikudagar", "timi": "15:30–16:30", "stadur": "Virkið – Gervigras" },
           { "dagur": "Fimmtudagar", "timi": "16:00–17:00", "stadur": "Víkin – Gervigras" },
           { "dagur": "Laugardagar", "timi": "10:00–11:00", "stadur": "Víkin – Gervigras" }
         ]
